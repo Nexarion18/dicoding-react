@@ -69,6 +69,6 @@ describe('Header component', () => {
 
         expect(logoutUser).toHaveBeenCalledTimes(1)
         expect(dispatchMock).toHaveBeenCalledWith({ type: 'auth/logout/mock' })
-        expect(navigateMock).toHaveBeenCalledWith('/dashboard-salah', { replace: true })
+        expect(navigateMock).toHaveBeenCalledWith('/', { replace: true })
     })
 })
